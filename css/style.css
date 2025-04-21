@@ -1,0 +1,385 @@
+:root {
+    --primary: #fea116;
+    --light: #f1f8ff;
+    --dark: #0f1728;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Brand styling */
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* Button styling */
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 8px 20px;
+}
+
+
+.service-item {
+    background-color: #f8f9fa; /* Light background initially */
+    transition: background-color 0.3s ease;
+}
+
+.service-item:hover {
+    background-color: #ffe082; /* Yellow shade on hover */
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 0;
+}
+
+.navbar-dark {
+    background-color: var(--dark) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--light) !important;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 500; 
+    text-transform: uppercase;
+    padding: 20px 0;
+     
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.navbar-nav {
+    align-items: center;
+    padding-right: 20px;
+}
+
+
+
+.hero-header{
+    background: linear-gradient(rgba(15,23,43,.9), rgba(15,23,43,.9)), url('../images/image\ 6.png') no-repeat center center/cover;
+}
+
+.hero-header img{
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (min-width:992px) {
+    .navbar-dark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background: transparent !important;
+    }
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+    
+    .navbar-nav {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* About section styling */
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #e08600;
+    border-color: #e08600;
+}
+
+/* For the image grid arrangement */
+@media (max-width: 991px) {
+    .about-img {
+        margin-bottom: 30px;
+    }
+}
+
+.text-primary {
+    color: #FFA500 !important;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.line-before,
+.line-after {
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+    background-color: #FFA500;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+
+.nav-pills .nav-item .active {
+    background-color: transparent !important;
+    border-bottom: 3px solid #FFA500;
+}
+
+.nav-pills .nav-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-pills .nav-item a:hover {
+    color: #FFA500;
+}
+
+.nav-pills {
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+/* Team Member Section Styles */
+.team-item {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.team-item .team-social {
+    opacity: 0;
+    transition: .5s;
+}
+
+.team-item:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-item:hover .team-social {
+    opacity: 1;
+}
+
+.team-social .btn {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.team-social .btn:hover {
+    transform: scale(1.1);
+    background-color: #ffa726;
+    border-color: #ffa726;
+}
+
+/* Social media icon colors */
+.btn-primary {
+    background-color: #FEA116;
+    border-color: #FEA116;
+}
+
+/* Fade in animation for social icons */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.team-item:hover .team-social {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Adding a darkened overlay on hover */
+.team-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+}
+
+.team-item:hover::before {
+    opacity: 1;
+}
+
+.team-social {
+    z-index: 2;
+}
+
+
+
+
+
+
+/* Contact Page Styles */
+
+/* Section Title Lines */
+.text-primary {
+    position: relative;
+}
+
+.line-before,
+.line-after {
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+    background-color: #ffa726;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+/* Contact Info Boxes */
+.contact-info {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.contact-info:hover {
+    background-color: #ffa726;
+    color: white;
+}
+
+.contact-info:hover h5,
+.contact-info:hover i {
+    color: white !important;
+}
+
+/* Form Controls */
+.form-control {
+    border: 1px solid #ced4da;
+    padding: 12px 15px;
+}
+
+.form-control:focus {
+    border-color: #ffa726;
+    box-shadow: 0 0 0 0.25rem rgba(255, 167, 38, 0.25);
+}
+
+/* Form Floating Labels */
+.form-floating>label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Hero Header */
+.hero-header {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 100%;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 6rem;
+    padding-top: 3rem;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer .btn.btn-link:hover {
+    color: #ffa726;
+}
+
+.copyright {
+    background-color: #111827;
+    color: white;
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #ffa726;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-info {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.testimonial-card:hover {
+    background-color: #FFB03B !important;
+    color: white !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover p {
+    color: white !important;
+}
