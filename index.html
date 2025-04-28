@@ -1,340 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodFront</title>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>FoodFront</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <!----------Front Page start-->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3">
-            <a href="" class="navbar-brand">
-                <h1 class="text-primary m-0"><img src="images/Restaurant Building.png" alt="Logo" class="me-2"
-                        style="height: 30px;">FoodFront</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Restaurant Building.png" alt="Logo">
+                <h1>FoodFront</h1>
+            </div>
+            
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
             </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#" class="btn">BOOK A Table</a></li>
+            </ul>
+        </div>
+    </header>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="" class="nav-item nav-link">HOME</a>
-                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
-                </div>
-                <a href="" class="btn btn-primary">BOOK A Table</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Enjoy Our <br> Delicious Meal</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta mollitia incidunt necessitatibus asperiores ab iste tenetur amet, accusantium, cum, pariatur deleniti repellendus eos.</p>
+                <a href="#" class="btn">Book A Table</a>
             </div>
-        </nav>
-        <div class="py-5 bg-dark hero-header mb-5">
-            <div class="container my-5 py-5">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6 text-center text-lg-start">
-                        <h1 class="display-3 text-white">Enjoy Our <br> Delicious Meal</h1>
-                        <p class="text-white mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-                            mollitia incidunt necessitatibus asperiores ab iste tenetur amet, accusantium, cum, pariatur
-                            deleniti repellendus eos. Placeat provident alias delectus natus suscipit magnam.</p>
-                        <a href="" class="btn btn-primary">Book A Table</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="images/hero 1.png" alt="">
-                    </div>
-                </div>
+            <div class="hero-image">
+                <img src="images/hero 1.png" alt="Delicious Meal">
             </div>
         </div>
-    </div>
-    <!----------Front Page end-->
+    </section>
 
-
-    <!----------Service Page end-->
-    <div class="container-xxl py-5">
+    <!-- Services Section -->
+    <section class="services">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                            <h5>Master Chefs</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            <div class="section-title">
+                <h5>Team Members</h5>
+                <h1>Our Master Chefs</h1>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h5>Master Chefs</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                
+                <div class="service-item">
+                    <i class="fas fa-utensils"></i>
+                    <h5>Quality Food</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                
+                <div class="service-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h5>Online Order</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                
+                <div class="service-item">
+                    <i class="fas fa-headset"></i>
+                    <h5>24/7 Service</h5>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-images">
+                <img src="images/about-1.jpg.png" alt="About 1">
+                <img src="images/about-2.jpg.png" alt="About 2">
+                <img src="images/about-3.jpg.png" alt="About 3">
+                <img src="images/about-4.jpg.png" alt="About 4">
+            </div>
+            
+            <div class="about-content">
+                <h5>About Us</h5>
+                <h1>Welcome to <i class="fas fa-utensils"></i> Restorant</h1>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <h1>13</h1>
+                        <div class="stat-text">
+                            <p>Years of</p>
+                            <h6>EXPERIENCE</h6>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <h1>50</h1>
+                        <div class="stat-text">
+                            <p>Popular</p>
+                            <h6>MASTER CHEFS</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                            <h5>Quality Food</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
+                
+                <a href="#" class="btn">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="menu-container">
+            <div class="section-title">
+                <h5>Food Menu</h5>
+                <h1>Most Popular Items</h1>
+            </div>
+            
+            <div class="menu-tabs">
+                <div class="tab-btn active">
+                    <i class="fas fa-coffee"></i>
+                    <div class="tab-text">
+                        <small>Popular</small>
+                        <h6>Breakfast</h6>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-shopping-cart text-primary mb-4"></i>
-                            <h5>Online Order</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
+                
+                <div class="tab-btn">
+                    <i class="fas fa-hamburger"></i>
+                    <div class="tab-text">
+                        <small>Special</small>
+                        <h6>Launch</h6>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                            <h5>24/7 Service</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                
+                <div class="tab-btn">
+                    <i class="fas fa-utensils"></i>
+                    <div class="tab-text">
+                        <small>Lovely</small>
+                        <h6>Dinner</h6>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/menu-1.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
                         </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/menu-2.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
+                        </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/menu-3.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
+                        </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/menu-4.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
+                        </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/menu-5.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
+                        </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/menu-6.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
+                        </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/menu-7.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
+                        </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/menu-8.jpg.png" alt="Chicken Burger">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span><b>Chicken Burger</b></span>
+                            <span>$115</span>
+                        </div>
+                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!----------Service Page end-->
+    </section>
 
-
-
-    <!----------About Page start-->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-6 text-start">
-                            <img class="img-fluid rounded w-100" src="images/about-1.jpg.png">
-                        </div>
-                        <div class="col-6 text-start">
-                            <img class="img-fluid rounded w-100 mt-3" src="images/about-2.jpg.png">
-                        </div>
-                        <div class="col-6 text-end">
-                            <img class="img-fluid rounded w-100 mt-3" src="images/about-3.jpg.png">
-                        </div>
-                        <div class="col-6 text-end">
-                            <img class="img-fluid rounded w-100" src="images/about-4.jpg.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h5 class="text-primary fw-bold">About Us</h5>
-                    <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restorant</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam ametdiam et
-                        eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-                    </p>
-                    <div class="row g-4 mb-4">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                <h1 class="text-primary mb-0" style="font-size: 50px;">13</h1>
-                                <div class="ps-4">
-                                    <p class="mb-0">Years of</p>
-                                    <h6 class="text-uppercase mb-0">EXPERIENCE</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                <h1 class="text-primary mb-0" style="font-size: 50px;">50</h1>
-                                <div class="ps-4">
-                                    <p class="mb-0">Popular</p>
-                                    <h6 class="text-uppercase mb-0">MASTER CHEFS</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5" href="">READ MORE</a>
-                </div>
-            </div>
+    <!-- Reservation Section -->
+    <section class="reservation">
+        <div class="reservation-image">
+            <img src="images/Overlay+Background.png" alt="Restaurant Interior">
         </div>
-    </div>
-    <!----------About Page end-->
-
-
-    <!----------Menu Page start-->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center">
-                <h5 class="text-primary fw-bold">Food Menu</h5>
-                <h1 class="mb-5">Most Popular Items</h1>
-            </div>
-
-            <div class="text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-4">
-                    <li class="nav-item">
-                        <a class="d-flex align-items-center text-start mx-3 ms-0 pb-2 active" data-bs-toggle="pill"
-                            href="#breakfast">
-                            <div class="category-icon">
-                                <i class="fa fa-coffee text-primary"></i>
-                            </div>
-                            <div class="ps-2">
-                                <small class="text-body">Popular</small>
-                                <h6 class="mt-n1 mb-0 fw-bold">Breakfast</h6>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex align-items-center text-start mx-3 pb-2" data-bs-toggle="pill" href="#launch">
-                            <div class="category-icon">
-                                <i class="fa fa-hamburger text-primary"></i>
-                            </div>
-                            <div class="ps-2">
-                                <small class="text-body">Special</small>
-                                <h6 class="mt-n1 mb-0 fw-bold">Launch</h6>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex align-items-center text-start mx-3 me-0 pb-2" data-bs-toggle="pill"
-                            href="#dinner">
-                            <div class="category-icon">
-                                <i class="fa fa-utensils text-primary"></i>
-                            </div>
-                            <div class="ps-2">
-                                <small class="text-body">Lovely</small>
-                                <h6 class="mt-n1 mb-0 fw-bold">Dinner</h6>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane fade show active">
-                        <div class="row g-4">
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-1.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-2.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-3.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-4.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-5.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-6.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-7.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid rounded" src="images/menu-8.jpg.png"
-                                        alt="Chicken Burger" style="width: 80px;">
-                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                            <span> <b>Chicken Burger</b></span>
-                                            <span class="text-primary">$115</span>
-                                        </h5>
-                                        <small>Ipsum ipsum clita erat amet dolor justo diam</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!----------Menu Page end-->
-
-    <!------ Reservation Start start------->
-    <section id="reservation" style="display: flex; flex-wrap: wrap;">
-        <!-- Image Side -->
-        <div style="flex: 1; min-width: 300px;">
-            <img src="images/Overlay+Background.png" alt="Reservation Image"
-                style="width: 100%; height: 100%; object-fit: cover;" />
-        </div>
-
-        <div style="flex: 1; background-color: #0B1320; color: white; padding: 40px;">
-            <h5 style="color: #FFB03B;">Reservation</h5>
-            <h2 style="margin-bottom: 30px;">Book A Table Online</h2>
+        
+        <div class="reservation-form">
+            <h5>Reservation</h5>
+            <h2>Book A Table Online</h2>
+            
             <form>
-                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-                    <input type="text" placeholder="Your Name" style="flex: 1; padding: 10px;" />
-                    <input type="email" placeholder="Your Email" style="flex: 1; padding: 10px;" />
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
                 </div>
-                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-                    <input type="text" placeholder="Date & Time" style="flex: 1; padding: 10px;" />
-                    <select style="flex: 1; padding: 10px;">
+                
+                <div class="form-group">
+                    <input type="text" placeholder="Date & Time">
+                    <select>
                         <option>No Of People</option>
                         <option>1 Person</option>
                         <option>2 People</option>
@@ -342,183 +269,130 @@
                         <option>4+ People</option>
                     </select>
                 </div>
-                <textarea placeholder="Special Request" rows="4"
-                    style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea>
-                <button type="submit"
-                    style="background-color: #FFB03B; color: white; border: none; padding: 12px 20px; font-weight: bold; width: 100%;">
-                    BOOK NOW
-                </button>
+                
+                <textarea placeholder="Special Request" rows="4"></textarea>
+                
+                <button type="submit" class="submit-btn">BOOK NOW</button>
             </form>
         </div>
     </section>
 
-
-    <script src="js/script.js"></script>
-    <!----------Reservation page End ------ -->
-
-
-
-    <!----------TeamMember Page start-->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center">
-                <h5 class="text-primary fw-bold">Team Members</h5>
-                <h1 class="mb-5">Our Master Chefs</h1>
+    <!-- Team Section -->
+    <section class="team">
+        <div class="team-container">
+            <div class="section-title">
+                <h5>Team Members</h5>
+                <h1>Our Master Chefs</h1>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="images/Container.png" alt="Chef 1">
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                        <div
-                            class="team-social position-absolute start-50 top-50 translate-middle d-flex align-items-center justify-content-center">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/Container.png" alt="Chef 1">
+                    <div class="team-member-info">
+                        <h5>Full Name</h5>
+                        <small>Designation</small>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="images/Container (1).png" alt="Chef 2">
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                        <div
-                            class="team-social position-absolute start-50 top-50 translate-middle d-flex align-items-center justify-content-center">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
+                
+                <div class="team-member">
+                    <img src="images/Container (1).png" alt="Chef 2">
+                    <div class="team-member-info">
+                        <h5>Full Name</h5>
+                        <small>Designation</small>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="images/Container (2).png" alt="Chef 3">
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                        <div
-                            class="team-social position-absolute start-50 top-50 translate-middle d-flex align-items-center justify-content-center">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
+                
+                <div class="team-member">
+                    <img src="images/Container (2).png" alt="Chef 3">
+                    <div class="team-member-info">
+                        <h5>Full Name</h5>
+                        <small>Designation</small>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="images/Container (3).png" alt="Chef 4">
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                        <div
-                            class="team-social position-absolute start-50 top-50 translate-middle d-flex align-items-center justify-content-center">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
+                
+                <div class="team-member">
+                    <img src="images/Container (3).png" alt="Chef 4">
+                    <div class="team-member-info">
+                        <h5>Full Name</h5>
+                        <small>Designation</small>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!----------TeamMember Page end-->
+    </section>
 
-
-    <!------ Testimonials Section Start ------->
-    <section id="testimonials" style="padding: 80px 0; background-color: #f8f9fa;">
-        <div class="container">
-            <div class="text-center mb-5">
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-title">
                 <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">Our Clients Say!!!</h2>
                 <p style="color: #6c757d; max-width: 700px; margin: 0 auto;">
                     Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor siet amet,<br>
                     elimod eos labore diam.
                 </p>
             </div>
-
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-card"
-                        style="background: white; padding: 30px; border-radius: 8px; height: 100%; transition: all 0.3s ease; text-align: center;">
-                        <div
-                            style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; border: 3px solid #FFB03B;">
-                            <img src="images/testimonial-4.jpg (1).png" alt="Client 1"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <p style="font-style: italic; margin-bottom: 20px;">
-                            "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor siet amet,
-                            elimod eos labore diam."
-                        </p>
-                        <h5 style="font-weight: 600; margin-bottom: 5px;">Client Name</h5>
-                        <p style="color: #6c757d; font-size: 0.9rem;">Profession</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-4.jpg (1).png" alt="Client 1">
                     </div>
+                    <p>"Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor siet amet, elimod eos labore diam."</p>
+                    <h5>Client Name</h5>
+                    <small>Profession</small>
                 </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-card"
-                        style="background: white; padding: 30px; border-radius: 8px; height: 100%; transition: all 0.3s ease; text-align: center;">
-                        <div
-                            style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; border: 3px solid #FFB03B;">
-                            <img src="images/testimonial-4.jpg.png" alt="Client 2"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <p style="font-style: italic; margin-bottom: 20px;">
-                            "Dolor et eos tribore, stet justo sed est sed. Diam sed sed dolor siet amet,
-                            elimod eos labore diam."
-                        </p>
-                        <h5 style="font-weight: 600; margin-bottom: 5px;">Client Name</h5>
-                        <p style="color: #6c757d; font-size: 0.9rem;">Profession</p>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-4.jpg.png" alt="Client 2">
                     </div>
+                    <p>"Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor siet amet, elimod eos labore diam."</p>
+                    <h5>Client Name</h5>
+                    <small>Profession</small>
                 </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-card"
-                        style="background: white; padding: 30px; border-radius: 8px; height: 100%; transition: all 0.3s ease; text-align: center;">
-                        <div
-                            style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; border: 3px solid #FFB03B;">
-                            <img src="images/testimonial-4.jpg.png" alt="Client 3"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <p style="font-style: italic; margin-bottom: 20px;">
-                            "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor siet amet,
-                            elimod eos labore diam."
-                        </p>
-                        <h5 style="font-weight: 600; margin-bottom: 5px;">Client Name</h5>
-                        <p style="color: #6c757d; font-size: 0.9rem;">Profession</p>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-4.jpg.png" alt="Client 3">
                     </div>
+                    <p>"Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor siet amet, elimod eos labore diam."</p>
+                    <h5>Client Name</h5>
+                    <small>Profession</small>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!------ Footer Start ------->
-    <footer style="background-color: #0B1320; color: white; padding: 30px 0; text-align: center;">
-        <div class="container">
-            <p style="margin-bottom: 20px;">© Your Site Name All Right Reserved.</p>
-            <div>
-                <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
-                <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Contact</a>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>© Your Site Name All Right Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
             </div>
         </div>
     </footer>
-    <!------ Footer Start ------->
-
 </body>
 
 </html>
