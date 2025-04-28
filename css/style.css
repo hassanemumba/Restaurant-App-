@@ -1,5 +1,4 @@
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,6 @@ a {
     margin: 0 auto;
 }
 
-/* Header Styles */
 header {
     background-color: #0f172b;
     color: white;
@@ -63,14 +61,6 @@ header {
     font-size: 1.5rem;
 }
 
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
 .nav-menu {
     display: flex;
@@ -635,9 +625,6 @@ footer p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-    }
     
     .nav-menu {
         display: none;
