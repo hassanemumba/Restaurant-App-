@@ -21,7 +21,7 @@ a {
     color: inherit;
 }
 
-.container {
+.service-container {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -313,6 +313,9 @@ header {
     display: block;
     color: #6c757d;
     font-size: 0.8rem;
+}
+.tab-btn:hover {
+    background-color: #ffdca8;
 }
 
 .tab-text h6 {
